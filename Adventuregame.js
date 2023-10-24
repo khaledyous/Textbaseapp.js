@@ -184,6 +184,155 @@ function hotel () {
   }
 }
 }
+function politiebureau () {
+  console.log ('Je loop langzamerhand een beetje richting de politie bureau')
+  console.log ('Oppeens begin je je zelf af te vragen waarom dit jou moet overkomen')
+  console.log (`${naam}; Waarom ben ik akkoord gegaan met zo iets doms eigenlijk`)
+  const politiebureau = readlineSync.keyInSelect(['vertel de waarheid aan de politie', 'Ren weg',], 'Wat ga je doen?');
+  if (politiebureau==1) {
+    console.log ('Je rent weg.')
+    IndeStadKeuze();
+  }
+  if (politiebureau==0) {
+    console.log ('Je loopt rustig de politie bureau binnen.')
+    console.log ('De Agent die op dat moment bij de balie zit staart je lang aan')
+    console.log ('Agent: Goedendag waarmee kan ik u van dienst zijn?')
+    const politieagent = readlineSync.keyInSelect(['Ik kom mijzelf aangeven aangezien ik iets hbe gedaan wat strafbaar is', 'Ik had een vraag maar die ben ik weer vergeten dus ik ga weer weg',])
+    if (politieagent==0) {
+      console.log (`${naam}: Ik ben mijn vraag vergeten dus sorry ik ga weer weg`)
+      console.log ('Agent: Maakt niks uit fijne dag nog')
+      console.log ('Je rent snel naar de uitgang van het polite bureau')
+      IndeStadKeuze();
+    }
+    if (politieagent==1) {
+      console.log (`${naam}: Goedendag meneer de agent, Ik kom mij bij deze aangeven van iets wat ik heb gedaan`)
+      console.log (`Agent: Wat heeft u gedaan?`)
+      console.log (`${naam}: Ik heb een scooter ongeluk gemaakt terwijl ik niet verzekerd ben. En daarna ben ik op de vlucht geslagen`)
+      console.log (`Agent: Oke dan gaan we dat even checken in het systeem heb je ID voor mij?`)
+      console.log (`${naam}: Zeker Asjeblieft`)
+      console.log (`Agent: Dankjewel ik check het even in het systeem`)
+      console.log (`${naam}: Oke gaat u gang`)
+      console.log (`===========Agent bekijkt systeem===========`)
+      console.log (`===========Agent belt zijn leidinggevend op===========`)
+      console.log (`${naam}: Meneer de agent waarom bel je je leidinggevende op?`)
+      console.log (`Agent: Je bent bij deze aangehouden. Je mag even meekomen.`)
+      const escape = readlineSync.keyInSelect(['Je begint oppeens weg te rennen van de polite', 'Je geeft jezelf over',], 'Wat ga je doen?');
+      if (escape==0) {
+        console.log ('Je rent zo snel mogelijk naar de uitgang van de politie bureau.')
+        console.log ('Zodra je buiten bent ren je zo snel mogelijk naar de kant van de hotel')
+        console.log ('Je rent eindelijk het hotel in')
+        hotel();
+      }
+      if (escape==1) {
+        console.log (`${naam}: Ik blijf hier wel staan`)
+        console.log (`============Even later komen der 2 bewapende agenten naar binnen============`)
+        console.log (`Bewapende Agenten: STAAN BLIJVEN EN NIET BEWEGEN!!`)
+        console.log (`${naam}: Ik doe niks`)
+        console.log (`Bewapende Agenten: HANDEN OMHOOG EN NIET BEWEGEN!!`)
+        const handenomhoog = readlineSync.keyInSelect(['Niet luisteren en wegrennen', 'Luisteren naar de agenten en je handen omhoog doen', ], 'Wat ga je doen?');
+        if (handenomhoog==1) {
+          console.log ('Je bent niet aan het luisteren naar de agenten')
+          console.log ('Zodra je begint te rennen. Beginnen de agenten te schieten')
+          console.log ('Je bent helaas overleden')
+          console.log ('===================================')
+          console.log ('EINDE')
+          console.log ('===================================')
+          startgame()
+        }
+        if (handenomhoog==0) {
+          console.log ('Je wordt eerst geboeid door de agenten en dan wordt je meegenomen')
+          console.log ('Ze stoppen je in een undercover politie auto en ze nemen je mee')
+          console.log ('===============PAAR UUR LATER JE ARRIVEERT OP DE POLITIE BUREAU===============')
+          console.log ('Bewapende agent: Haal hem maar uit de auto')
+          console.log (`${naam}: Waar ben ik?`)
+          console.log ('Bewapende agent: Je bent op de politie bureau we brengen je naar de commissaris')
+          console.log ('===============PAAR MINUTEN LATER ===============')
+          console.log ('Commissaris: Goed werk gedaan heren!!')
+          console.log (`Commissaris: Goedendag ${naam} je weet waarom u hier bent. `)
+          console.log (`${naam}: Ik heb geen idee`)
+          console.log (`Commissaris: De reden is omdat de agent bij de bureau had aangeven dat iemand met de naam ${naam} zich wil aangeven`)
+          function vraag1() {
+          const vraag1 = readlineSync.keyInSelect(['Wat heb ik gedaan', 'Wat ga je met mij doen', ], 'Wat ga je vragen?');
+          if (vraag1==0) {
+            console.log (`${naam}: Wat ga je met mij doen?`)
+            console.log (`commissaris: op dit moment gaan we nog niks met jou doen`)
+          }
+          if (vraag1==1) {
+            console.log (`${naam}: Kan je vertellen wat ik heb gedaan. Want het lijkt alsof ik hier voor niks zit`)
+            console.log (`Commissaris: Ga je nu ontkennen?`)
+          }
+          console.log(`Commissaris: `)
+          console.log(``)
+          console.log(``)
+          console.log(``)
+          console.log(``)
+          console.log(``)
+          console.log(``)
+          console.log(``)
+          console.log(``)
+          console.log(``)
+          
+
+
+
+
+            
+
+
+          }
+
+        }
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+}
 
 
 
