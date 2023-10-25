@@ -261,147 +261,71 @@ function politiebureau () {
             console.log (`${naam}: Kan je vertellen wat ik heb gedaan. Want het lijkt alsof ik hier voor niks zit`)
             console.log (`Commissaris: Ga je nu ontkennen?`)
           }
-          console.log(`Commissaris: `)
-          console.log(``)
-          console.log(``)
-          console.log(``)
-          console.log(``)
-          console.log(``)
-          console.log(``)
-          console.log(``)
-          console.log(``)
-          console.log(``)
-          
-
-
-
-
-            
-
-
+          console.log(`Commissaris: De agent op de bureau heeft aan mij vertelt dat je zo wat alles bent vergeten `)
+          console.log(`${naam}: Dat is juist wat ik probeer te zeggen`)
+          console.log(`Commissaris: Oke, Ik ga het dan even vertellen. 5 dagen voordat je de ongeval van je scooter hebt gehad. Wordt je verdacht van moord en we konden jou al die tijd niet vinden op je aan te houden en hebben we je. `)
+          console.log(`${naam}: Dat heb ik helemaal niet gedaan!`)
+          console.log(`Commissaris: Oke, We hebben nu een onderzoek. Zodra die onderzoek klaar is mag je uit de gevangenis. `)
+          console.log(`${naam}: DUS IK GA NU NAAR DE GEVANGENIS`)
+          console.log(`Commissaris: Ja dat heb je goed begrepen.`)
+          console.log(`Commissaris: We wachten nu even op de transport naar de gevangenis.`)
+          console.log(`====================20 MINUTEN LATER====================`)
+          console.log(`Commissaris: Stap maar in de bus`)
+          console.log(`====================50 MINUTEN LATER AANKOMST GEVANGENIS====================`)
+          console.log(`DJI agent: Goedendag, ${naam} U bent aangekomen in de gevangenis `)
+          console.log('DJI agent: Kan je al je spullen in deze zak doen')
+          const gevangenis = readlineSync.keyInSelect(['Doe spullen in zak', ], 'Wat ga je doen?');
+          if (gevangenis==0) {
+            console.log ('Je doet alle spullen die je hebt in de zak')
           }
-
+          console.log ('Doe deze kleren aan.')
+          console.log ('Doe je oude kleren in deze zak')
+          const klerenuit = readlineSync.keyInSelect(['Doe de nieuwe kleren aan', ], 'Wat ga je doen?');
+          if (klerenuit==0) {
+            console.log ('Je doet al je oude kleren uit en doet die in de zak')
+            console.log ('Je doet je nieuwe kleren aan')
+          }
+          console.log ('DJI agent: Kom maar mee ik breng je naar je cel. ')
+          console.log ('DJI agent: Dit is je cel voor de aankomende tijd als je nog vragen hebt hoor ik het')
+          const cel = readlineSync.keyInSelect(['Je loopt de cel in', 'Je loopt de cel niet in', ], 'Wat ga je doen?');
+          if (cel==0) {
+            console.log ('Je loopt de cel in')
+          }
+          else {
+            console.log ('De DJI agent duwt je de cel in')
+          }
+          console.log ('De DJI agent wenst je veel succes en doet de deur achter je dicht')
+          console.log (`====================================`)
+          console.log (`EINDE`)
+          console.log (`====================================`)
+          startgame()
+          }
         }
-
-
-
-
-
-
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      }
+    }
+  }
+}
+}
+function naarhethuis()
+{
+      console.log ('Je bent bij het grotehuis wat, Wat ga je doen?')
+      const grotehuis = readlineSync.keyInSelect(['Je belt aan', 'Je klopt op de deur', 'Je loopt weg', ], 'Wat ga je doen?');
+      if (grotehuis==0) {
+        console.log ('Je belt aan')
+        console.log ('Niemand doet open')
+        startgame()
+      }
+      if (grotehuis==1) {
+        console.log ('Je klopt aan')
+        console.log ('Niemand doet open')
+        startgame()
       }
 
+      if (grotehuis==2) {
+        console.log ('Je loopt weg')
+        startgame()
+      }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-  }
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 startgame()
 
 
